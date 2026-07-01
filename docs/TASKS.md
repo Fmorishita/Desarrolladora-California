@@ -5,52 +5,58 @@
 - [x] Crear `/docs` + archivos `.md` base
 - [x] `.env.example`
 - [x] `.gitignore`
-- [ ] Recibir accesos/tokens
+- [ ] Recibir accesos/tokens (ver `API_AND_TOKENS_CHECKLIST.md`)
 
 ## Fase 1 — Scaffolding
-- [ ] Init Next.js (App Router, TS, Tailwind, ESLint, src/, alias @)
-- [ ] Instalar deps (shadcn/ui, framer-motion, lucide, RHF, zod, supabase)
-- [ ] Design tokens (tailwind + globals + fuentes)
-- [ ] Estructura de carpetas
+- [x] Init Next.js 14 (App Router, TS, Tailwind, ESLint, src/, alias @)
+- [x] Instalar deps (framer-motion, lucide, RHF, zod, supabase/ssr)
+- [x] Design tokens (tailwind + globals + fuentes Inter/Fraunces)
+- [x] Estructura de carpetas
 
 ## Fase 2 — Design system / layout
-- [ ] Navbar
-- [ ] Footer
-- [ ] WhatsAppFloatingButton
-- [ ] SectionHeading / CTASection / TopographicBackground
-- [ ] Primitivos UI (Button, Input, Textarea, Select, Accordion, Badge, Card)
+- [x] Navbar (responsive + menú móvil)
+- [x] Footer
+- [x] WhatsAppFloatingButton (contextual por ruta)
+- [x] SectionHeading / CTASection / TopographicBackground / PageHero
+- [x] Primitivos UI (Button, Input, Textarea, Select, Checkbox, Label, Badge, Card, Slot)
 
 ## Fase 3 — Páginas
-- [ ] Home
-- [ ] Terratenientes
-- [ ] Proyectos (listado)
-- [ ] Mirador del Valle
-- [ ] Servicios
-- [ ] Nosotros
-- [ ] Contacto
-- [ ] Metadata SEO por página + sitemap + robots + OG
+- [x] Home
+- [x] Terratenientes
+- [x] Proyectos (listado)
+- [x] Mirador del Valle (`/proyectos/[slug]`)
+- [x] Servicios
+- [x] Nosotros
+- [x] Contacto
+- [x] Metadata SEO por página + sitemap + robots + OG (SVG)
+- [x] 404 personalizado
 
 ## Fase 4 — Backend / datos
-- [ ] Migraciones SQL (5 tablas) + RLS
-- [ ] Seed Mirador del Valle
-- [ ] Clientes Supabase (browser/server/admin)
-- [ ] Server actions + Zod (3 formularios)
-- [ ] Anti-spam (honeypot + timing)
-- [ ] Notificación email opcional (Resend)
+- [x] Migraciones SQL (5 tablas) + RLS (`supabase/migrations/0001_init.sql`)
+- [x] Seed Mirador del Valle (`supabase/seed.sql`)
+- [x] Clientes Supabase (browser/server/service-role)
+- [x] Server actions + Zod (3 formularios)
+- [x] Anti-spam (honeypot + rate-limit en memoria)
+- [x] Notificación email opcional (Resend vía fetch)
+- [x] Modo degradado sin secretos (build no depende de envs)
 
 ## Fase 5 — Admin
-- [ ] `/admin` base + guard
-- [ ] AdminLeadTable / AdminProjectTable / StatusBadge
-- [ ] Documentar activación de Supabase Auth
+- [x] `/admin` base + guard (`checkAdminAccess`, allowlist de emails)
+- [x] AdminLeadTable / StatusBadge / AdminSetupNotice
+- [x] Lectura de leads con service role (server-only, noindex)
+- [ ] Edición de estado / notas / carga de lotes (siguiente fase)
+- [ ] Página de login `/admin/login` con Supabase Auth (siguiente fase)
 
 ## Fase 6 — QA / SEO / Perf
-- [ ] `tsc` sin errores
-- [ ] lint sin errores críticos
-- [ ] `build` de producción verde
-- [ ] Responsive mobile/tablet/desktop
-- [ ] A11y básica
+- [x] `tsc` sin errores
+- [x] lint sin errores/warnings
+- [x] `build` de producción verde (13 rutas)
+- [x] Hidratación limpia verificada en prod (0 pageerrors, 0 chunk fails)
+- [x] Responsive mobile/tablet/desktop (verificado con capturas)
+- [x] A11y básica (focus, labels, aria en menú/acordeón, reduced-motion)
 
 ## Fase 7 — Deploy
-- [ ] `.env` en Vercel
-- [ ] Deploy preparado/ejecutado
-- [ ] Actualizar `DEPLOYMENT_GUIDE.md` y `KEY_ROTATION.md`
+- [ ] `.env` en Vercel (requiere tokens)
+- [ ] Deploy ejecutado (requiere `VERCEL_TOKEN` o import manual)
+- [x] `DEPLOYMENT_GUIDE.md` con pasos
+- [x] `KEY_ROTATION.md` con claves a rotar

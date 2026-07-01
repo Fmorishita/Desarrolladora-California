@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#1A1917"/>
+  <g stroke="#B08A54" stroke-width="1.2" opacity="0.16">
+    <path d="M-40 200 C 220 120, 420 300, 640 230 S 1040 110, 1260 220" fill="none"/>
+    <path d="M-40 260 C 220 180, 420 360, 640 290 S 1040 170, 1260 280" fill="none"/>
+    <path d="M-40 320 C 220 240, 420 420, 640 350 S 1040 230, 1260 340" fill="none"/>
+    <path d="M-40 380 C 220 300, 420 480, 640 410 S 1040 290, 1260 400" fill="none"/>
+    <ellipse cx="980" cy="470" rx="120" ry="74" fill="none"/>
+    <ellipse cx="980" cy="470" rx="180" ry="112" fill="none"/>
+    <ellipse cx="980" cy="470" rx="240" ry="150" fill="none"/>
+  </g>
+  <text x="80" y="150" font-family="Georgia, serif" font-size="30" fill="#B08A54" letter-spacing="6">URBANIZADORA · DESARROLLADORA</text>
+  <text x="78" y="300" font-family="Georgia, serif" font-size="120" fill="#F6F2EA">California</text>
+  <text x="80" y="400" font-family="Georgia, serif" font-size="40" fill="#E7DECB">Transformamos tierra en proyectos</text>
+  <text x="80" y="452" font-family="Georgia, serif" font-size="40" fill="#E7DECB">con valor patrimonial.</text>
+  <rect x="80" y="520" width="60" height="4" fill="#B08A54"/>
+  <text x="80" y="565" font-family="Arial, sans-serif" font-size="24" fill="#8A857B">Urbanización · Lotificación · Desarrollo · Comercialización</text>
+</svg>

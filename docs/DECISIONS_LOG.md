@@ -11,3 +11,7 @@
 | 2026-07-01 | Tipografía: serif editorial (Fraunces) + Inter | Sensación editorial/patrimonial premium |
 | 2026-07-01 | Anti-spam: honeypot + timing check (sin dependencia externa) | Simple, sin costo, sin captcha intrusivo |
 | 2026-07-01 | Admin v1 protegido por Supabase Auth + allowlist de emails; si no hay Auth, base documentada | Alcance realista sin exponer datos privados |
+| 2026-07-01 | Next.js 14.2 + React 18 (no 15/19) | Combinación estable y probada con framer-motion y supabase/ssr |
+| 2026-07-01 | Primitivos UI hechos a mano (sin CLI shadcn ni Radix) | Menos dependencias; control total; evita prompts de red |
+| 2026-07-01 | Reveal on-scroll con `viewport={{ once, amount: 0.15 }}` | Más robusto que margin negativo; evita secciones que no revelan |
+| 2026-07-01 | Imágenes vía Unsplash como placeholder + `next.config` remotePatterns | Preparado para reemplazo por assets reales de Supabase Storage |
