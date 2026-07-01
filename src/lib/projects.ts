@@ -40,7 +40,7 @@ export const projects: Project[] = [
     shortDescription:
       "Terrenos amplios cerca de Valle de Guadalupe, diseñados para inversión patrimonial, descanso y desarrollo futuro.",
     longDescription:
-      "Mirador del Valle es un proyecto de lotificación con terrenos amplios en una de las zonas con mayor proyección de Baja California. Pensado como una oportunidad patrimonial de largo plazo, combina ubicación estratégica, terrenos de dimensiones generosas y esquemas de financiamiento flexibles para inversión, descanso o desarrollo futuro.",
+      "Mirador del Valle es un proyecto de lotificación con terrenos amplios en el entorno de Valle de Guadalupe, la principal región vitivinícola de México y un polo gastronómico y turístico en consolidación. Ese contexto —vino, gastronomía y visitantes en aumento— es el motor de demanda y plusvalía de la zona. El proyecto combina ubicación estratégica, terrenos de dimensiones generosas y financiamiento flexible, pensado como un activo de largo plazo para inversión, descanso o desarrollo futuro.",
     heroImageUrl:
       "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=70",
     facts: [
@@ -54,11 +54,12 @@ export const projects: Project[] = [
       { label: "Disponibles", value: "≈ 70" },
     ],
     benefits: [
+      "Absorción comprobada: 21 de 91 terrenos comercializados en 18 meses.",
       "Terrenos amplios de aproximadamente 1,000 m² para proyectos de largo plazo.",
       "Ubicación estratégica a unos 4 minutos de Arena Valle de Guadalupe.",
       "Esquemas de financiamiento flexibles, con enganche del 10% al 20%.",
       "Precio de entrada competitivo desde US$40/m².",
-      "Oportunidad patrimonial con potencial de plusvalía en una zona en crecimiento.",
+      "En el entorno de Valle de Guadalupe: vino, gastronomía y turismo impulsan la plusvalía.",
       "Adecuado para inversión, casa de descanso o desarrollo futuro.",
     ],
     faqs: [

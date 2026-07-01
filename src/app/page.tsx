@@ -28,7 +28,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Qué hacemos"
             title="Del potencial de la tierra al proyecto comercializable"
-            description="Integramos planeación, urbanización, lotificación y comercialización para transformar tierra con potencial en activos con valor patrimonial."
+            description="Integramos planeación, urbanización, lotificación y comercialización para transformar tierra con potencial en activos urbanizados y comercializables."
           />
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {services.slice(0, 6).map((s, i) => (
@@ -61,7 +61,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Cómo trabajamos"
             title="Un proceso ordenado para desarrollar tierra"
-            description="Cada terreno requiere una lectura distinta. Nuestro enfoque combina planeación, estructura operativa y visión patrimonial."
+            description="Cada terreno requiere una lectura distinta. Nuestro enfoque combina planeación, estructura operativa y visión de largo plazo."
           />
           <div className="mt-14">
             <ProcessTimeline steps={processSteps} />
@@ -186,7 +186,7 @@ export default function HomePage() {
 
       <CTASection
         eyebrow="Siguiente paso"
-        title="Convierte tu tierra en un proyecto con valor patrimonial"
+        title="Convierte tu tierra en un proyecto estructurado y rentable"
         description="Solicita un diagnóstico privado o conversemos sobre tu proyecto. Sin compromiso y con total confidencialidad."
         primaryLabel="Solicitar diagnóstico privado"
         primaryHref="/terratenientes"

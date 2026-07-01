@@ -60,12 +60,14 @@ export default function NosotrosPage() {
               <p className="leading-relaxed">
                 No solo urbanizamos. Estructuramos oportunidades. Acompañamos a
                 propietarios, inversionistas y socios en el proceso de convertir
-                tierra con potencial en proyectos con valor patrimonial.
+                tierra con potencial en activos con valor patrimonial.
               </p>
               <p className="leading-relaxed">
-                Cada terreno requiere una lectura distinta. Nuestro enfoque
-                combina planeación, estructura operativa y visión patrimonial
-                para desarrollar proyectos viables y comercializables.
+                Cada terreno requiere una lectura distinta. Antes de proponer un
+                camino evaluamos seis variables: ubicación, acceso, servicios,
+                situación legal, viabilidad y mercado. De esa lectura depende el
+                modelo —asociación, desarrollo, urbanización o comercialización—
+                y no al revés.
               </p>
             </div>
           </div>
@@ -77,15 +79,16 @@ export default function NosotrosPage() {
             />
             <div className="mt-6 space-y-4 text-ink/70">
               <p className="leading-relaxed">
-                Operamos en dos frentes: proyectos propios o asociados —donde
-                participamos en la estructuración, urbanización, lotificación y
-                venta— y la captación de propietarios de tierra interesados en
-                convertir sus predios en proyectos rentables.
+                Operamos en dos frentes. En el primero desarrollamos proyectos
+                propios o asociados: estructuramos, urbanizamos, lotificamos y
+                comercializamos. En el segundo trabajamos con propietarios de
+                tierra que buscan convertir un predio en un proyecto rentable sin
+                asumir por su cuenta la planeación, los permisos ni la venta.
               </p>
               <p className="leading-relaxed">
-                Evaluamos el potencial de la tierra, estructuramos proyectos
-                viables y acompañamos su desarrollo hasta convertirlos en activos
-                comercializables.
+                En ambos casos el método es el mismo: evaluar el potencial,
+                estructurar un proyecto viable y acompañar su desarrollo hasta
+                convertirlo en un activo comercializable.
               </p>
             </div>
           </div>

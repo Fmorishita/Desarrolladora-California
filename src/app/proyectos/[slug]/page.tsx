@@ -96,7 +96,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="container-tight">
           <SectionHeading
             eyebrow="Datos clave"
-            title="Una oportunidad patrimonial con números claros"
+            title="Una oportunidad con números claros y demanda comprobada"
             description={project.longDescription}
           />
           <div className="mt-12 space-y-4">

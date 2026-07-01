@@ -41,5 +41,11 @@ Premium · institucional · sobrio · estratégico · patrimonial · profesional
 - **Interesados en proyecto:** "Gracias. Recibimos tu solicitud de información. Te contactaremos para compartir detalles del proyecto, disponibilidad y opciones de financiamiento."
 - **General:** confirmación clara y profesional equivalente.
 
+## Iteración de copy (2026-07-01)
+- **Variar "valor patrimonial":** se mantiene como mensaje central en hero y tagline; en secciones secundarias (servicios, CTA home, Nosotros, "Por qué") se alterna con: activos urbanizados y comercializables · proyecto estructurado y rentable · visión de largo plazo · plusvalía. Evitar repetirlo en cada bloque.
+- **Prueba de absorción (Mirador):** "21 de 91 comercializados en 18 meses" se usa como prueba social destacada (primer beneficio + título de sección "demanda comprobada"), no solo como dato suelto.
+- **Contexto de zona (Mirador):** aprobado mencionar Valle de Guadalupe como región vitivinícola/gastronómica/turística en consolidación como motor de plusvalía. Sin cifras inventadas.
+- **Microcopy de confianza:** formularios de propietarios incluyen "toma menos de un minuto · información confidencial".
+
 ## SEO copy por página
 Ver títulos y descripciones en `INFORMATION_ARCHITECTURE.md` / implementados en metadata (sección brief 23).

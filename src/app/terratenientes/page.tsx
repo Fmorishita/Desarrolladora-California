@@ -231,7 +231,7 @@ export default function TerratenientesPage() {
               align="center"
               eyebrow="Diagnóstico privado"
               title="Solicita la evaluación de tu terreno"
-              description="Completa la información de tu propiedad. El equipo la revisará para evaluar el tipo de oportunidad y el siguiente paso más adecuado."
+              description="Completa la información de tu propiedad. Toma menos de un minuto y tu información se trata de forma estrictamente confidencial. El equipo la revisará para evaluar el tipo de oportunidad y el siguiente paso más adecuado."
               className="mx-auto"
             />
             <div className="mt-12 rounded-xl border border-border/70 bg-card p-6 shadow-sm sm:p-9">
