@@ -56,7 +56,10 @@
 - [x] A11y básica (focus, labels, aria en menú/acordeón, reduced-motion)
 
 ## Fase 7 — Deploy
-- [ ] `.env` en Vercel (requiere tokens)
-- [ ] Deploy ejecutado (requiere `VERCEL_TOKEN` o import manual)
-- [x] `DEPLOYMENT_GUIDE.md` con pasos
+- [x] `.env` en Vercel (4 variables de Producción)
+- [x] Supabase: migración + seed aplicados; RLS verificada
+- [x] Deploy ejecutado → https://desarrolladora-california.vercel.app
+- [x] Verificación en vivo (rutas 200) + ruta service_role (persistencia de leads)
+- [x] `DEPLOYMENT_GUIDE.md` con pasos y estado
 - [x] `KEY_ROTATION.md` con claves a rotar
+- [ ] Rotar claves compartidas en chat tras validar el demo (pendiente del cliente)

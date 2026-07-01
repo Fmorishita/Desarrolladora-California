@@ -39,5 +39,23 @@ vercel deploy --prod --token=$VERCEL_TOKEN
 - [ ] Sin claves sensibles en el bundle cliente
 - [ ] Dominio configurado (si aplica)
 
+## Estado de producción (2026-07-01)
+- **URL en vivo:** https://desarrolladora-california.vercel.app
+- **Proyecto Vercel:** `desarrolladora-california` (scope `fmorishitas-projects`, `prj_NIrGzWukUPgH51j2noM6KGbShpmR`).
+- **Variables en Producción:** `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `NEXT_PUBLIC_SITE_URL`.
+- **Supabase:** proyecto `wvmeclsjamlmevlzzkdq`. Migración `0001_init` y seed aplicados vía Management API. RLS verificada (anon: INSERT en leads + SELECT en contenido público; sin SELECT de leads).
+- **Verificado:** rutas 200 en vivo; ruta de service_role (INSERT/SELECT/DELETE) OK → formularios persisten leads.
+
+### Redeploy tras cambios
+```bash
+vercel deploy --prod --yes --token=$VERCEL_TOKEN --scope=fmorishitas-projects
+```
+El repo también está enlazado; conectar Git en el dashboard de Vercel habilita deploys automáticos por push.
+
+### Pendiente opcional (mejora la funcionalidad)
+- `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_CONTACT_EMAIL` → activan botón WhatsApp y correo en footer/contacto.
+- `RESEND_API_KEY` + `LEADS_NOTIFICATION_EMAIL` → notificación por email de cada lead.
+- `ADMIN_ALLOWED_EMAILS` + Supabase Auth → habilitar `/admin`.
+
 ## Errores resueltos / notas
-- (registrar aquí incidencias de build y su solución conforme surjan)
+- Hidratación React #423 en pruebas locales: causada por servidores `next start` duplicados/inestables sirviendo chunks a medias, no por el código. Con un build+start limpio, hidratación sin errores.
