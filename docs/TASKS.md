@@ -55,6 +55,17 @@
 - [x] Responsive mobile/tablet/desktop (verificado con capturas)
 - [x] A11y básica (focus, labels, aria en menú/acordeón, reduced-motion)
 
+## Fase 8 — Rediseño v2 (rama `claude/california-redesign-v2`)
+- [x] Lenguaje visual "plan maestro/prospecto" (ver `DESIGN_SYSTEM.md` § v2)
+- [x] Hero rediseñado (leyenda de proyecto activo, itálica, meta de coordenadas)
+- [x] Monograma + wordmark de cierre en footer
+- [x] Marquee de disciplinas + banda editorial de aire
+- [x] Mirador: EditorialStats, AbsorptionBand, FinancingOptions, TechSheet, proceso de compra, StickyCTA móvil
+- [x] Terratenientes: expediente confidencial
+- [x] JSON-LD (Organization, FAQ, Breadcrumbs)
+- [x] Build/lint/tsc verdes + revisión visual desktop y móvil
+- [ ] Aprobación del cliente → merge y deploy a producción
+
 ## Fase 7 — Deploy
 - [x] `.env` en Vercel (4 variables de Producción)
 - [x] Supabase: migración + seed aplicados; RLS verificada

@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppFloatingButton } from "@/components/whatsapp-floating-button";
 import { Analytics } from "@/components/analytics";
+import { OrganizationJsonLd } from "@/components/seo/json-ld";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
+  style: ["normal", "italic"],
   axes: ["opsz"],
 });
 
@@ -54,6 +56,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppFloatingButton />
         <Analytics />
+        <OrganizationJsonLd />
       </body>
     </html>
   );

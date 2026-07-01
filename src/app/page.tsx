@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { HomeHero } from "@/components/home/home-hero";
 import { ThreePaths } from "@/components/home/three-paths";
+import { EditorialBand } from "@/components/home/editorial-band";
+import { DisciplinesMarquee } from "@/components/marquee";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { ProcessTimeline } from "@/components/process-timeline";
@@ -11,6 +13,7 @@ import { CTASection } from "@/components/cta-section";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
 import { TopographicBackground } from "@/components/topographic-background";
+import { FaqJsonLd } from "@/components/seo/json-ld";
 import { services, processSteps, differentiators, homeFaqs } from "@/lib/content";
 import { getFeaturedProjects } from "@/lib/projects";
 
@@ -19,13 +22,18 @@ export default function HomePage() {
 
   return (
     <>
+      <FaqJsonLd items={homeFaqs} />
       <HomeHero />
       <ThreePaths />
+      <div className="mt-20 lg:mt-24">
+        <DisciplinesMarquee />
+      </div>
 
       {/* Servicios */}
       <section className="topo-lines py-20 lg:py-28">
         <div className="container-tight">
           <SectionHeading
+            number="01"
             eyebrow="Qué hacemos"
             title="Del potencial de la tierra al proyecto comercializable"
             description="Integramos planeación, urbanización, lotificación y comercialización para transformar tierra con potencial en activos urbanizados y comercializables."
@@ -59,6 +67,7 @@ export default function HomePage() {
       <section className="bg-sand/40 py-20 lg:py-28">
         <div className="container-tight">
           <SectionHeading
+            number="02"
             eyebrow="Cómo trabajamos"
             title="Un proceso ordenado para desarrollar tierra"
             description="Cada terreno requiere una lectura distinta. Nuestro enfoque combina planeación, estructura operativa y visión de largo plazo."
@@ -70,9 +79,9 @@ export default function HomePage() {
       </section>
 
       {/* Bloque propietarios */}
-      <section className="relative overflow-hidden bg-olive text-bone">
+      <section className="grain relative overflow-hidden bg-olive text-bone">
         <TopographicBackground variant="dark" />
-        <div className="container-tight relative grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
+        <div className="container-tight relative z-[2] grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
           <div>
             <Reveal>
               <span className="eyebrow">
@@ -128,6 +137,7 @@ export default function HomePage() {
         <div className="container-tight">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading
+              number="03"
               eyebrow="Proyectos"
               title="Oportunidades activas"
               description="Proyectos estructurados de inversión patrimonial, descanso y desarrollo futuro."
@@ -146,11 +156,14 @@ export default function HomePage() {
         </div>
       </section>
 
+      <EditorialBand />
+
       {/* Por qué */}
-      <section className="bg-carbon py-20 text-bone lg:py-28">
-        <div className="container-tight">
+      <section className="grain relative bg-carbon py-20 text-bone lg:py-28">
+        <div className="container-tight relative z-[2]">
           <SectionHeading
             tone="dark"
+            number="04"
             eyebrow="Por qué California"
             title="Estructura, visión y capacidad de ejecución"
             description="No solo urbanizamos. Estructuramos oportunidades y acompañamos su desarrollo hasta convertirlas en activos comercializables."
@@ -175,6 +188,7 @@ export default function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="container-tight grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading
+            number="05"
             eyebrow="Preguntas frecuentes"
             title="Lo esencial, claro y directo"
           />

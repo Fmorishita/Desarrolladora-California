@@ -2,6 +2,22 @@
 
 Dirección: institucional inmobiliario premium (desarrolladoras líderes, fondos de inversión en tierra, estudios de arquitectura, firmas de urbanismo). Sobrio, editorial, patrimonial. Mobile-first.
 
+## Lenguaje visual v2 — "Plan maestro / prospecto" (2026-07-01)
+Identidad diferenciadora del nicho: el sitio se lee como un prospecto de desarrollo de tierra.
+- **Marcas de registro** (`CornerMarks`): cruces `+` en esquinas de piezas clave (hero, ficha técnica, formularios, esquemas de financiamiento).
+- **Numeración de hoja de plano**: secciones numeradas `01…08` en el eyebrow (`SectionHeading number`), timeline con placas cuadradas y conector punteado ("Fase 01").
+- **Ficha técnica** (`TechSheet`): filas con guías punteadas (dotted leaders) + código de hoja ("Hoja MDV·01").
+- **Cifras editoriales** (`EditorialStats`): numerales display sobre regla superior cobre, sin cajas. Reemplaza al grid encajonado en páginas de proyecto.
+- **Banda de absorción** (`AbsorptionBand`): prueba comercial 21/91 como pieza destacada en olivo.
+- **Grano de papel** (`.grain`): textura de ruido sutil (opacidad .05, blend overlay) en secciones oscuras.
+- **Itálica serif de acento** (`.accent-italic`): palabras clave en cobre dentro de titulares (Fraunces italic).
+- **Marquee editorial** (`DisciplinesMarquee`): franja lenta con las disciplinas, pausada con reduced-motion.
+- **Monograma** (`Monogram`): cuadro de registro con curvas de nivel; sello provisional de marca en navbar/footer.
+- **Wordmark de cierre**: "California" gigante al 9% de opacidad al pie del footer.
+- **Leyenda de plano en hero**: card del proyecto activo (Mirador) con datos y CTA.
+- **Coordenadas de referencia**: franja meta en hero (región · 32°N 116°O) como motivo de agrimensura.
+- **Sticky CTA móvil** (`StickyCTA`): barra inferior en página de proyecto con precio + WhatsApp + ancla al formulario (el botón flotante de WhatsApp se oculta en móvil ahí).
+
 ## Paleta (tokens)
 | Token | Uso | Hex |
 |-------|-----|-----|

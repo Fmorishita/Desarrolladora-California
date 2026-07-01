@@ -19,9 +19,9 @@ export function PageHero({
   align = "left",
 }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-carbon text-bone">
+    <section className="grain relative overflow-hidden bg-carbon text-bone">
       <TopographicBackground variant="dark" />
-      <div className="container-tight relative pb-16 pt-20 lg:pb-24 lg:pt-28">
+      <div className="container-tight relative z-[2] pb-16 pt-20 lg:pb-24 lg:pt-28">
         <div className={cn("max-w-3xl", align === "center" && "mx-auto text-center")}>
           {eyebrow && (
             <Reveal>

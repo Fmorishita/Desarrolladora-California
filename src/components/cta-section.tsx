@@ -24,9 +24,9 @@ export function CTASection({
   secondaryHref,
 }: CTASectionProps) {
   return (
-    <section className="relative overflow-hidden bg-carbon text-bone">
+    <section className="grain relative overflow-hidden bg-carbon text-bone">
       <TopographicBackground variant="dark" />
-      <div className="container-tight relative py-20 lg:py-28">
+      <div className="container-tight relative z-[2] py-20 lg:py-28">
         <div className="mx-auto max-w-3xl text-center">
           {eyebrow && (
             <Reveal>

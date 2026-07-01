@@ -14,6 +14,8 @@ import { SectionHeading } from "@/components/section-heading";
 import { ProcessTimeline } from "@/components/process-timeline";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { LandownerForm } from "@/components/forms/landowner-form";
+import { CornerMarks } from "@/components/corner-marks";
+import { FaqJsonLd } from "@/components/seo/json-ld";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
 import { buildMetadata } from "@/lib/seo";
@@ -117,6 +119,7 @@ export default function TerratenientesPage() {
 
   return (
     <>
+      <FaqJsonLd items={objections} />
       <PageHero
         eyebrow="Para propietarios de tierra"
         title={
@@ -234,7 +237,17 @@ export default function TerratenientesPage() {
               description="Completa la información de tu propiedad. Toma menos de un minuto y tu información se trata de forma estrictamente confidencial. El equipo la revisará para evaluar el tipo de oportunidad y el siguiente paso más adecuado."
               className="mx-auto"
             />
-            <div className="mt-12 rounded-xl border border-border/70 bg-card p-6 shadow-sm sm:p-9">
+            <div className="relative mt-12 border border-stone/35 bg-card p-6 shadow-sm sm:p-10">
+              <CornerMarks />
+              <div className="mb-7 flex items-center justify-between gap-4 border-b border-stone/25 pb-4">
+                <p className="inline-flex items-center gap-2 text-[0.68rem] font-medium uppercase tracking-[0.24em] text-copper">
+                  <ShieldCheck className="size-4" />
+                  Expediente confidencial
+                </p>
+                <p className="text-[0.68rem] uppercase tracking-[0.18em] text-ink/40">
+                  Preevaluación
+                </p>
+              </div>
               <LandownerForm />
             </div>
             <p className="mt-6 flex items-center justify-center gap-2 text-center text-xs text-ink/55">

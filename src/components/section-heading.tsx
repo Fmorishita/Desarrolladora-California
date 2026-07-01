@@ -3,6 +3,8 @@ import { Reveal } from "@/components/motion/reveal";
 
 interface SectionHeadingProps {
   eyebrow?: string;
+  /** Numeración tipo hoja de plano ("01", "02"…) mostrada junto al eyebrow. */
+  number?: string;
   title: React.ReactNode;
   description?: React.ReactNode;
   align?: "left" | "center";
@@ -12,6 +14,7 @@ interface SectionHeadingProps {
 
 export function SectionHeading({
   eyebrow,
+  number,
   title,
   description,
   align = "left",
@@ -29,6 +32,11 @@ export function SectionHeading({
       {eyebrow && (
         <Reveal>
           <span className="eyebrow">
+            {number && (
+              <span className="font-display text-sm tracking-normal text-copper/80">
+                {number}
+              </span>
+            )}
             <span className="h-px w-6 bg-copper" />
             {eyebrow}
           </span>

@@ -15,3 +15,7 @@
 | 2026-07-01 | Primitivos UI hechos a mano (sin CLI shadcn ni Radix) | Menos dependencias; control total; evita prompts de red |
 | 2026-07-01 | Reveal on-scroll con `viewport={{ once, amount: 0.15 }}` | Más robusto que margin negativo; evita secciones que no revelan |
 | 2026-07-01 | Imágenes vía Unsplash como placeholder + `next.config` remotePatterns | Preparado para reemplazo por assets reales de Supabase Storage |
+| 2026-07-01 | Rediseño v2 en rama `claude/california-redesign-v2` con lenguaje "plan maestro/prospecto" | Identidad única en el nicho: agrimensura, fichas técnicas, numeración de plano (autorizado por el cliente) |
+| 2026-07-01 | JSON-LD (Organization, FAQPage, BreadcrumbList) | SEO estructurado sin riesgo: solo datos confirmados |
+| 2026-07-01 | Financiamiento como comparador A/B (5 años US$40 vs 8 años US$45) | Hace tangible la decisión de compra con datos confirmados |
+| 2026-07-01 | Absorción 21/91 como pieza destacada (`AbsorptionBand`) | La prueba social más fuerte del proyecto merece jerarquía propia |

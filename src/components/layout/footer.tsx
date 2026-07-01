@@ -9,9 +9,9 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden bg-carbon text-bone">
+    <footer className="grain relative overflow-hidden bg-carbon text-bone">
       <TopographicBackground variant="dark" />
-      <div className="container-tight relative py-16 lg:py-20">
+      <div className="container-tight relative z-[2] pt-16 lg:pt-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div className="max-w-sm">
             <Logo tone="dark" />
@@ -86,6 +86,13 @@ export function Footer() {
           </p>
           <p className="text-bone/40">
             Los datos y esquemas comerciales están sujetos a confirmación.
+          </p>
+        </div>
+
+        {/* Wordmark editorial de cierre */}
+        <div aria-hidden className="select-none overflow-hidden pt-10">
+          <p className="-mb-[0.16em] text-center font-display text-[clamp(4rem,15.5vw,13.5rem)] leading-none tracking-tightest text-bone/[0.09]">
+            California
           </p>
         </div>
       </div>

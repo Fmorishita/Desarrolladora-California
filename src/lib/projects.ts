@@ -54,7 +54,6 @@ export const projects: Project[] = [
       { label: "Disponibles", value: "≈ 70" },
     ],
     benefits: [
-      "Absorción comprobada: 21 de 91 terrenos comercializados en 18 meses.",
       "Terrenos amplios de aproximadamente 1,000 m² para proyectos de largo plazo.",
       "Ubicación estratégica a unos 4 minutos de Arena Valle de Guadalupe.",
       "Esquemas de financiamiento flexibles, con enganche del 10% al 20%.",
