@@ -22,3 +22,5 @@
 | 2026-07-02 | v3 visual en rama `claude/california-v3-visual` (desde v2): manifiesto central de imágenes (`src/lib/images.ts`) + `SitePhoto`/`PhotoMosaic` | El cliente cargará fotos reales; cada slot se reemplaza en una línea (ver `IMAGES_GUIDE.md`) |
 | 2026-07-02 | Sello "Imagen ilustrativa" en placeholders (`provisional`) | Honestidad visual mientras llegan las fotos reales; se quita por prop |
 | 2026-07-02 | Placeholders Unsplash verificados visualmente (contact sheet) antes de asignar | Evitar imágenes rotas o de tema equivocado |
+| 2026-07-02 | Cotizador Mirador: ≤5 años → US$40/m²; 6–8 años → US$45/m²; enganche 10–20%; mensualidad = saldo/meses (directo, redondeo hacia arriba) | Reglas de precio confirmadas por el cliente; sin intereses ocultos |
+| 2026-07-02 | Cotizador envía desglose por WhatsApp; sin número configurado, fallback al formulario + copiar desglose | El canal principal aún no tiene número; UX no se rompe |

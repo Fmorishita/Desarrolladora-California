@@ -75,6 +75,7 @@
 - [x] Nosotros: franja visual planeación/ejecución
 - [x] `docs/IMAGES_GUIDE.md` (inventario de slots para reemplazo)
 - [x] Sección de testimonios "Voces" en Home (ilustrativos, reemplazables en `src/lib/testimonials.ts`)
+- [x] Cotizador "Cotiza tu terreno" en Mirador (`#cotizador`): superficie/plazo/enganche con opciones + manual, desglose y envío por WhatsApp (fallback a formulario sin número)
 - [ ] Reemplazar testimonios ilustrativos por reales autorizados
 - [x] Build/lint/tsc verdes + revisión visual con imágenes reales
 - [ ] Cargar fotografías reales del cliente (reemplazo por slot)

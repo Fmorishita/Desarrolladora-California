@@ -13,6 +13,7 @@ import { ProcessTimeline } from "@/components/process-timeline";
 import { TechSheet } from "@/components/project/tech-sheet";
 import { AbsorptionBand } from "@/components/project/absorption-band";
 import { FinancingOptions } from "@/components/project/financing-options";
+import { PriceCalculator } from "@/components/project/price-calculator";
 import { StickyCTA } from "@/components/project/sticky-cta";
 import { CornerMarks } from "@/components/corner-marks";
 import { PhotoMosaic } from "@/components/photo-mosaic";
@@ -179,6 +180,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           />
           <div className="mt-12">
             <FinancingOptions />
+          </div>
+          <div id="cotizador" className="mt-14 scroll-mt-24">
+            <PriceCalculator />
           </div>
         </div>
       </section>
