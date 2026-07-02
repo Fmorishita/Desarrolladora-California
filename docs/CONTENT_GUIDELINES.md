@@ -47,5 +47,10 @@ Premium · institucional · sobrio · estratégico · patrimonial · profesional
 - **Contexto de zona (Mirador):** aprobado mencionar Valle de Guadalupe como región vitivinícola/gastronómica/turística en consolidación como motor de plusvalía. Sin cifras inventadas.
 - **Microcopy de confianza:** formularios de propietarios incluyen "toma menos de un minuto · información confidencial".
 
+## Testimonios (2026-07-02)
+- Sección "Voces" en Home con 3 perfiles (propietario, comprador, socio).
+- Los testimonios actuales son **ilustrativos** y se muestran con sello visible; los nombres van como `[Nombre del …]`.
+- Para publicar reales: editar `src/lib/testimonials.ts` (quote/name/role) y poner `provisional: false`. **Nunca** publicar como real un testimonio no autorizado.
+
 ## SEO copy por página
 Ver títulos y descripciones en `INFORMATION_ARCHITECTURE.md` / implementados en metadata (sección brief 23).

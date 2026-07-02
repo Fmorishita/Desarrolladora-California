@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
 import { TopographicBackground } from "@/components/topographic-background";
 import { FaqJsonLd } from "@/components/seo/json-ld";
+import { TestimonialsSection } from "@/components/testimonials-section";
 import { SitePhoto } from "@/components/site-photo";
 import { PhotoMosaic } from "@/components/photo-mosaic";
 import { services, processSteps, differentiators, homeFaqs } from "@/lib/content";
@@ -218,11 +219,14 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonios */}
+      <TestimonialsSection number="06" />
+
       {/* FAQ */}
       <section className="py-20 lg:py-28">
         <div className="container-tight grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading
-            number="06"
+            number="07"
             eyebrow="Preguntas frecuentes"
             title="Lo esencial, claro y directo"
           />

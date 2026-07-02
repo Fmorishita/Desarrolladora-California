@@ -74,6 +74,8 @@
 - [x] Mirador: galería mosaico del proyecto
 - [x] Nosotros: franja visual planeación/ejecución
 - [x] `docs/IMAGES_GUIDE.md` (inventario de slots para reemplazo)
+- [x] Sección de testimonios "Voces" en Home (ilustrativos, reemplazables en `src/lib/testimonials.ts`)
+- [ ] Reemplazar testimonios ilustrativos por reales autorizados
 - [x] Build/lint/tsc verdes + revisión visual con imágenes reales
 - [ ] Cargar fotografías reales del cliente (reemplazo por slot)
 - [ ] Aprobación → merge y deploy a producción
