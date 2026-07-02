@@ -22,9 +22,9 @@ export function HomeHero() {
           src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=60"
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-[0.16]"
+          className="h-full w-full object-cover opacity-[0.26]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-carbon/80 via-carbon/85 to-carbon" />
+        <div className="absolute inset-0 bg-gradient-to-b from-carbon/75 via-carbon/80 to-carbon" />
       </div>
       <CornerMarks tone="dark" className="z-[2] hidden lg:block" />
 

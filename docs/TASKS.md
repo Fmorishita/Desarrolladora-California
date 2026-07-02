@@ -66,6 +66,18 @@
 - [x] Build/lint/tsc verdes + revisión visual desktop y móvil
 - [ ] Aprobación del cliente → merge y deploy a producción
 
+## Fase 9 — v3 visual (rama `claude/california-v3-visual`)
+- [x] Manifiesto central de imágenes (`src/lib/images.ts`) + `SitePhoto` + `PhotoMosaic`
+- [x] Home: cards con foto, foto lateral en servicios, mosaico "El territorio"
+- [x] Servicios: fotografía temática por servicio (7)
+- [x] Terratenientes: foto "para quién es" + franja panorámica
+- [x] Mirador: galería mosaico del proyecto
+- [x] Nosotros: franja visual planeación/ejecución
+- [x] `docs/IMAGES_GUIDE.md` (inventario de slots para reemplazo)
+- [x] Build/lint/tsc verdes + revisión visual con imágenes reales
+- [ ] Cargar fotografías reales del cliente (reemplazo por slot)
+- [ ] Aprobación → merge y deploy a producción
+
 ## Fase 7 — Deploy
 - [x] `.env` en Vercel (4 variables de Producción)
 - [x] Supabase: migración + seed aplicados; RLS verificada

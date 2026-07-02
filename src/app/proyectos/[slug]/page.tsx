@@ -15,6 +15,7 @@ import { AbsorptionBand } from "@/components/project/absorption-band";
 import { FinancingOptions } from "@/components/project/financing-options";
 import { StickyCTA } from "@/components/project/sticky-cta";
 import { CornerMarks } from "@/components/corner-marks";
+import { PhotoMosaic } from "@/components/photo-mosaic";
 import { FaqJsonLd, BreadcrumbsJsonLd } from "@/components/seo/json-ld";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
@@ -220,12 +221,34 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {/* Galería */}
+      <section className="bg-sand/40 py-20 lg:py-24">
+        <div className="container-tight">
+          <SectionHeading
+            number="05"
+            eyebrow="Galería"
+            title="El proyecto y su entorno"
+            description="Imágenes ilustrativas del entorno; se reemplazarán por fotografía real del proyecto."
+          />
+          <div className="mt-12">
+            <PhotoMosaic
+              items={[
+                { id: "mirador-g1", label: "Entorno del valle" },
+                { id: "mirador-g2", label: "Terreno tipo" },
+                { id: "mirador-g3", label: "Vistas" },
+                { id: "mirador-g4", label: "Visión de descanso" },
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Ficha técnica + plano */}
-      <section className="bg-sand/40 py-20 lg:py-28">
+      <section className="py-20 lg:py-28">
         <div className="container-tight grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <SectionHeading
-              number="05"
+              number="06"
               eyebrow="Hoja de proyecto"
               title="La información, como en un plano"
             />
@@ -251,10 +274,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Disponibilidad */}
-      <section className="py-20 lg:py-24">
+      <section className="bg-sand/40 py-20 lg:py-24">
         <div className="container-tight">
           <SectionHeading
-            number="06"
+            number="07"
             eyebrow="Disponibilidad"
             title="Lotes del proyecto"
             description="La disponibilidad puntual se confirma al solicitar información. Preparado para mostrar lotes en vivo desde la base de datos."
@@ -266,10 +289,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Proceso de compra */}
-      <section className="bg-sand/40 py-20 lg:py-24">
+      <section className="py-20 lg:py-24">
         <div className="container-tight">
           <SectionHeading
-            number="07"
+            number="08"
             eyebrow="Proceso de compra"
             title="Cuatro pasos, sin letras pequeñas"
             description="Un proceso claro y acompañado, de la primera llamada a la formalización."
@@ -285,7 +308,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="container-tight relative z-[2] grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <SectionHeading
             tone="dark"
-            number="08"
+            number="09"
             eyebrow="Preguntas frecuentes"
             title="Todo lo que necesitas saber"
           />

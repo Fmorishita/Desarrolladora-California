@@ -19,3 +19,6 @@
 | 2026-07-01 | JSON-LD (Organization, FAQPage, BreadcrumbList) | SEO estructurado sin riesgo: solo datos confirmados |
 | 2026-07-01 | Financiamiento como comparador A/B (5 años US$40 vs 8 años US$45) | Hace tangible la decisión de compra con datos confirmados |
 | 2026-07-01 | Absorción 21/91 como pieza destacada (`AbsorptionBand`) | La prueba social más fuerte del proyecto merece jerarquía propia |
+| 2026-07-02 | v3 visual en rama `claude/california-v3-visual` (desde v2): manifiesto central de imágenes (`src/lib/images.ts`) + `SitePhoto`/`PhotoMosaic` | El cliente cargará fotos reales; cada slot se reemplaza en una línea (ver `IMAGES_GUIDE.md`) |
+| 2026-07-02 | Sello "Imagen ilustrativa" en placeholders (`provisional`) | Honestidad visual mientras llegan las fotos reales; se quita por prop |
+| 2026-07-02 | Placeholders Unsplash verificados visualmente (contact sheet) antes de asignar | Evitar imágenes rotas o de tema equivocado |

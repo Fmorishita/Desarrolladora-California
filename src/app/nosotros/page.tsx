@@ -4,6 +4,7 @@ import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/motion/reveal";
 import { CTASection } from "@/components/cta-section";
+import { SitePhoto } from "@/components/site-photo";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -92,6 +93,28 @@ export default function NosotrosPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Franja visual */}
+      <section className="container-tight pb-20 lg:pb-28">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Reveal>
+            <SitePhoto
+              id="nosotros-1"
+              aspect="aspect-[16/10]"
+              width={900}
+              label="Planeación"
+            />
+          </Reveal>
+          <Reveal index={1}>
+            <SitePhoto
+              id="nosotros-2"
+              aspect="aspect-[16/10]"
+              width={900}
+              label="Ejecución"
+            />
+          </Reveal>
         </div>
       </section>
 

@@ -15,6 +15,7 @@ import { ProcessTimeline } from "@/components/process-timeline";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { LandownerForm } from "@/components/forms/landowner-form";
 import { CornerMarks } from "@/components/corner-marks";
+import { SitePhoto } from "@/components/site-photo";
 import { FaqJsonLd } from "@/components/seo/json-ld";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
@@ -157,6 +158,15 @@ export default function TerratenientesPage() {
               title="Propietarios de terrenos o hectáreas con potencial"
               description="Pensado para quien tiene tierra pero no necesariamente la estructura, el capital o la experiencia para desarrollarla."
             />
+            <Reveal index={3}>
+              <SitePhoto
+                id="terra-quien"
+                aspect="aspect-[16/10]"
+                width={900}
+                label="Hectáreas"
+                className="mt-10"
+              />
+            </Reveal>
           </div>
           <div className="space-y-3 lg:pt-4">
             {evaluableLand.map((item, i) => (
@@ -209,6 +219,18 @@ export default function TerratenientesPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Franja visual */}
+      <section aria-hidden className="container-tight pb-20 lg:pb-28">
+        <Reveal>
+          <SitePhoto
+            id="terra-band"
+            aspect="aspect-[16/7] sm:aspect-[21/7]"
+            width={1600}
+            label="Tierra con potencial"
+          />
+        </Reveal>
       </section>
 
       {/* Objeciones */}

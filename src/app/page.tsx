@@ -14,6 +14,8 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
 import { TopographicBackground } from "@/components/topographic-background";
 import { FaqJsonLd } from "@/components/seo/json-ld";
+import { SitePhoto } from "@/components/site-photo";
+import { PhotoMosaic } from "@/components/photo-mosaic";
 import { services, processSteps, differentiators, homeFaqs } from "@/lib/content";
 import { getFeaturedProjects } from "@/lib/projects";
 
@@ -32,12 +34,22 @@ export default function HomePage() {
       {/* Servicios */}
       <section className="topo-lines py-20 lg:py-28">
         <div className="container-tight">
-          <SectionHeading
-            number="01"
-            eyebrow="Qué hacemos"
-            title="Del potencial de la tierra al proyecto comercializable"
-            description="Integramos planeación, urbanización, lotificación y comercialización para transformar tierra con potencial en activos urbanizados y comercializables."
-          />
+          <div className="grid items-end gap-10 lg:grid-cols-[1.4fr_1fr]">
+            <SectionHeading
+              number="01"
+              eyebrow="Qué hacemos"
+              title="Del potencial de la tierra al proyecto comercializable"
+              description="Integramos planeación, urbanización, lotificación y comercialización para transformar tierra con potencial en activos urbanizados y comercializables."
+            />
+            <Reveal index={2} className="hidden lg:block">
+              <SitePhoto
+                id="services-side"
+                aspect="aspect-[4/3]"
+                width={800}
+                label="Planeación"
+              />
+            </Reveal>
+          </div>
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {services.slice(0, 6).map((s, i) => (
               <ServiceCard
@@ -132,12 +144,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Proyectos destacados */}
+      {/* El territorio */}
       <section className="py-20 lg:py-28">
+        <div className="container-tight">
+          <SectionHeading
+            number="03"
+            eyebrow="El territorio"
+            title="Tierra, obra y resultado"
+            description="Del terreno en evaluación a la obra de urbanización y el proyecto terminado. Estas imágenes se reemplazarán por fotografía propia de la desarrolladora."
+          />
+          <div className="mt-12">
+            <PhotoMosaic
+              items={[
+                { id: "territory-1", label: "Terreno" },
+                { id: "territory-2", label: "Vistas" },
+                { id: "territory-3", label: "Urbanización" },
+                { id: "territory-4", label: "Resultado" },
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Proyectos destacados */}
+      <section className="bg-sand/40 py-20 lg:py-28">
         <div className="container-tight">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading
-              number="03"
+              number="04"
               eyebrow="Proyectos"
               title="Oportunidades activas"
               description="Proyectos estructurados de inversión patrimonial, descanso y desarrollo futuro."
@@ -163,7 +197,7 @@ export default function HomePage() {
         <div className="container-tight relative z-[2]">
           <SectionHeading
             tone="dark"
-            number="04"
+            number="05"
             eyebrow="Por qué California"
             title="Estructura, visión y capacidad de ejecución"
             description="No solo urbanizamos. Estructuramos oportunidades y acompañamos su desarrollo hasta convertirlas en activos comercializables."
@@ -188,7 +222,7 @@ export default function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="container-tight grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading
-            number="05"
+            number="06"
             eyebrow="Preguntas frecuentes"
             title="Lo esencial, claro y directo"
           />

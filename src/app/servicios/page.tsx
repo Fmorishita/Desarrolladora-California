@@ -5,8 +5,10 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/cta-section";
+import { SitePhoto } from "@/components/site-photo";
 import { buildMetadata } from "@/lib/seo";
 import { services } from "@/lib/content";
+import type { SiteImageId } from "@/lib/images";
 
 export const metadata: Metadata = buildMetadata({
   title: "Servicios de Urbanización y Lotificación",
@@ -33,13 +35,20 @@ export default function ServiciosPage() {
                 className="grid gap-8 rounded-xl border border-border/70 bg-card p-7 scroll-mt-24 sm:p-9 lg:grid-cols-[0.9fr_1.1fr]"
               >
                 <div>
-                  <span className="flex size-12 items-center justify-center rounded-md bg-olive/10 text-olive">
-                    <s.icon className="size-6" />
-                  </span>
-                  <h2 className="mt-6 font-display text-2xl text-ink sm:text-3xl">
-                    {s.title}
-                  </h2>
-                  <p className="mt-3 leading-relaxed text-ink/70">{s.what}</p>
+                  <SitePhoto
+                    id={`service-${s.slug}` as SiteImageId}
+                    aspect="aspect-[16/9]"
+                    width={900}
+                  />
+                  <div className="mt-6 flex items-center gap-3">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-olive/10 text-olive">
+                      <s.icon className="size-5" />
+                    </span>
+                    <h2 className="font-display text-2xl text-ink sm:text-3xl">
+                      {s.title}
+                    </h2>
+                  </div>
+                  <p className="mt-4 leading-relaxed text-ink/70">{s.what}</p>
                   <div className="mt-6">
                     <Button asChild variant="outline" size="sm">
                       <Link href={s.nextStep.href}>
