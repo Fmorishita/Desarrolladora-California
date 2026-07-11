@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#2B1F1A"/>
+  <g stroke="#D9A441" stroke-width="1.4" opacity="0.25" fill="none">
+    <path d="M 320 630 A 280 280 0 0 1 880 630"/>
+    <path d="M 220 630 A 380 380 0 0 1 980 630"/>
+    <path d="M 120 630 A 480 480 0 0 1 1080 630"/>
+    <path d="M 20 630 A 580 580 0 0 1 1180 630"/>
+  </g>
+  <circle cx="600" cy="630" r="80" fill="#D9A441" fill-opacity="0.2"/>
+  <text x="80" y="160" font-family="Georgia, serif" font-size="28" fill="#D9A441" letter-spacing="8">TERRENOS CERCA DE VALLE DE GUADALUPE</text>
+  <text x="76" y="290" font-family="Georgia, serif" font-size="96" fill="#FAF5EC">Mirador <tspan font-style="italic" fill="#D9A441">del Valle</tspan></text>
+  <text x="80" y="380" font-family="Georgia, serif" font-size="38" fill="#EFE3D0">Desde US$40/m² · Enganche 10–20%</text>
+  <text x="80" y="432" font-family="Georgia, serif" font-size="38" fill="#EFE3D0">Financiamiento hasta 8 años</text>
+  <rect x="80" y="490" width="60" height="4" fill="#C2603D"/>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="24" fill="#B7A99A">≈1,000 m² por terreno · 4 min de Arena Valle de Guadalupe</text>
+</svg>

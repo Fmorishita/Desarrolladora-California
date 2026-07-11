@@ -1,5 +1,14 @@
 # TASKS
 
+## Fase 10 — Sitio independiente Mirador del Valle (`mirador/`, rama `claude/mirador-site`)
+- [x] Sub-app Next.js independiente en `mirador/` (identidad "atardecer en el valle")
+- [x] Landing de conversión completa: hero, entorno, cotizador, galería, plano/mapa, proceso, FAQ, formulario
+- [x] Leads → `project_interests` del Supabase compartido (service role, honeypot, rate-limit)
+- [x] Proyecto Vercel separado `mirador-del-valle` + envs producción
+- [x] Deploy: https://mirador-del-valle.vercel.app (verificado en vivo)
+- [x] JSON-LD (Place + FAQPage), sitemap, robots, OG image
+- [ ] WhatsApp/mapa/fotos reales (pendiente del cliente)
+
 ## Fase 0 — Preparación
 - [x] Auditar entorno
 - [x] Crear `/docs` + archivos `.md` base

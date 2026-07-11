@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-cream font-sans text-dusk;
+  }
+  ::selection {
+    @apply bg-clay text-cream;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tightest;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-6xl px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.22em] text-clay;
+  }
+  .eyebrow .bar {
+    @apply inline-block h-px w-6 bg-gold;
+  }
+  .btn-primary {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-full bg-clay px-8 text-sm font-semibold text-cream shadow-md transition-all hover:bg-clay-deep hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/50 focus-visible:ring-offset-2;
+  }
+  .btn-ghost-light {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-full border border-cream/40 px-8 text-sm font-semibold text-cream transition-colors hover:bg-cream/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream/40;
+  }
+  .btn-outline {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-full border border-cocoa/40 px-8 text-sm font-semibold text-dusk transition-colors hover:border-clay hover:text-clay focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/40;
+  }
+  .field {
+    @apply h-11 w-full rounded-lg border border-cocoa/25 bg-white/70 px-3.5 text-sm text-dusk shadow-sm transition-colors placeholder:text-cocoa/50 focus-visible:border-clay focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/25;
+  }
+  .accent-italic {
+    font-style: italic;
+    font-weight: 480;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Grano cálido para secciones oscuras */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}

@@ -24,3 +24,6 @@
 | 2026-07-02 | Placeholders Unsplash verificados visualmente (contact sheet) antes de asignar | Evitar imágenes rotas o de tema equivocado |
 | 2026-07-02 | Cotizador Mirador: ≤5 años → US$40/m²; 6–8 años → US$45/m²; enganche 10–20%; mensualidad = saldo/meses (directo, redondeo hacia arriba) | Reglas de precio confirmadas por el cliente; sin intereses ocultos |
 | 2026-07-02 | Cotizador envía desglose por WhatsApp; sin número configurado, fallback al formulario + copiar desglose | El canal principal aún no tiene número; UX no se rompe |
+| 2026-07-11 | Sitio Mirador como sub-app `mirador/` del monorepo + proyecto Vercel separado | Acceso GitHub limitado a este repo; patrón monorepo estándar con deploys independientes |
+| 2026-07-11 | Mirador comparte el Supabase de la desarrolladora (leads en `project_interests`) | Una sola base comercial/CRM; separar la DB fragmentaría los leads |
+| 2026-07-11 | Identidad propia "atardecer en el valle" (terracota/dorado/arcos de horizonte) | Diferenciar la marca del proyecto de la marca corporativa |
