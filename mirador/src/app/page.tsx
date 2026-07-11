@@ -6,6 +6,9 @@ import {
   CalendarClock,
   ShieldCheck,
   ArrowDown,
+  Tent,
+  Ticket,
+  KeyRound,
 } from "lucide-react";
 import { HorizonArcs } from "@/components/horizon-arcs";
 import { Reveal } from "@/components/reveal";
@@ -13,6 +16,7 @@ import { Calculator } from "@/components/calculator";
 import { InterestForm } from "@/components/interest-form";
 import { FAQ } from "@/components/faq";
 import { faqs } from "@/lib/faqs";
+import { Testimonials } from "@/components/testimonials";
 import { FloatingCTA } from "@/components/floating-cta";
 import { site, project, whatsappUrl } from "@/lib/site";
 
@@ -112,12 +116,13 @@ export default function Page() {
             <Reveal index={1}>
               <h1 className="mt-6 text-[2.6rem] leading-[1.04] sm:text-6xl lg:text-[4.4rem]">
                 Tu terreno frente al valle,{" "}
-                <span className="accent-italic text-gold">desde US$40/m²</span>
+                <span className="accent-italic text-gold">desde US$45/m²</span>
               </h1>
             </Reveal>
             <Reveal index={2}>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-cream/80">
-                {site.tagline} Enganche del 10% al 20% y financiamiento flexible hasta 8 años.
+                {site.tagline} Enganche del 10% al 20% y financiamiento hasta 8 años,
+                <strong className="text-gold"> sin intereses</strong>.
               </p>
             </Reveal>
             <Reveal index={3}>
@@ -138,7 +143,7 @@ export default function Page() {
               {[
                 { v: "≈1,000 m²", l: "por terreno" },
                 { v: "10–20%", l: "de enganche" },
-                { v: "hasta 8 años", l: "de financiamiento" },
+                { v: "8 años", l: "de financiamiento sin intereses" },
                 { v: "4 min", l: "de Arena Valle de Guadalupe" },
               ].map((s) => (
                 <div key={s.l}>
@@ -214,25 +219,72 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ── ARENA VALLE DE GUADALUPE ─────────────────────────── */}
+      <section className="grain relative overflow-hidden bg-vine py-20 text-cream lg:py-28">
+        <HorizonArcs tone="dark" />
+        <div className="container-site relative z-[2]">
+          <div className="max-w-3xl">
+            <Reveal>
+              <span className="eyebrow">
+                <span className="bar" />A 4 minutos de Arena Valle de Guadalupe
+              </span>
+            </Reveal>
+            <Reveal index={1}>
+              <h2 className="mt-4 text-3xl leading-[1.12] text-cream sm:text-4xl">
+                Junto al epicentro de{" "}
+                <span className="accent-italic text-gold">los grandes eventos</span> del valle
+              </h2>
+            </Reveal>
+            <Reveal index={2}>
+              <p className="mt-5 max-w-2xl leading-relaxed text-cream/75">
+                Arena Valle de Guadalupe recibe conciertos y eventos que atraen a miles de
+                visitantes. Estar a solo 4 minutos convierte a Mirador del Valle en un punto muy
+                atractivo para quien quiere construir su cabaña de descanso — o invertir para rentar
+                por Airbnb en cada temporada de eventos.
+              </p>
+            </Reveal>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            {[
+              { icon: Tent, t: "Construye tu cabaña", d: "Tu escape de fin de semana a minutos del valle y sus vinícolas." },
+              { icon: KeyRound, t: "Renta por Airbnb", d: "Demanda de hospedaje impulsada por los eventos de la Arena." },
+              { icon: Ticket, t: "Cerca de la acción", d: "Ubicación estratégica frente a uno de los polos de entretenimiento de la región." },
+            ].map((c, i) => (
+              <Reveal key={c.t} index={i}>
+                <div className="h-full rounded-xl border border-cream/15 bg-cream/[0.06] p-6">
+                  <c.icon className="size-5 text-gold" />
+                  <p className="mt-4 font-display text-lg text-cream">{c.t}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-cream/70">{c.d}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── FINANCIAMIENTO + COTIZADOR ───────────────────────── */}
       <section id="cotizador" className="scroll-mt-16 bg-blush/60 py-20 lg:py-28">
         <div className="container-site">
           <SectionTitle
             eyebrow="Precio y financiamiento"
-            title="Dos esquemas, un mismo terreno"
-            description="Hasta 5 años manteniendo el precio de lista de US$40/m², o hasta 8 años a US$45/m². En ambos, enganche del 10% al 20% y mensualidades fijas."
+            title={
+              <>
+                Un precio claro, <span className="accent-italic text-clay">sin intereses</span>
+              </>
+            }
+            description="Precio único de US$45/m². Enganche del 10% al 20% y financiamiento directo hasta 8 años, con mensualidades fijas y sin intereses."
           />
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:max-w-3xl">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { code: "Esquema A", term: "Hasta 5 años", price: "US$40/m²", note: "Mantiene precio de lista" },
-              { code: "Esquema B", term: "Hasta 8 años", price: "US$45/m²", note: "Plazo extendido, mensualidad más baja" },
+              { v: "US$45/m²", l: "Precio único" },
+              { v: "10–20%", l: "De enganche" },
+              { v: "Hasta 8 años", l: "De financiamiento" },
+              { v: "Sin intereses", l: "Mensualidades fijas" },
             ].map((p, i) => (
-              <Reveal key={p.code} index={i}>
-                <div className="rounded-xl border border-cocoa/20 bg-white/60 p-6">
-                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-clay">{p.code}</p>
-                  <p className="mt-2 font-display text-2xl text-dusk">{p.term}</p>
-                  <p className="font-display text-lg text-vine">{p.price}</p>
-                  <p className="mt-2 text-xs text-cocoa">{p.note} · Enganche 10–20%</p>
+              <Reveal key={p.l} index={i}>
+                <div className="h-full rounded-xl border border-cocoa/20 bg-white/60 p-6">
+                  <p className="font-display text-2xl text-vine">{p.v}</p>
+                  <p className="mt-2 text-xs uppercase tracking-[0.12em] text-cocoa">{p.l}</p>
                 </div>
               </Reveal>
             ))}
@@ -361,6 +413,20 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ── TESTIMONIOS ──────────────────────────────────────── */}
+      <section className="bg-blush/60 py-20 lg:py-28">
+        <div className="container-site">
+          <SectionTitle
+            eyebrow="Clientes"
+            title="Quienes ya eligieron el valle"
+            description="Tres motivos, un mismo proyecto: descanso, inversión y confianza."
+          />
+          <div className="mt-12">
+            <Testimonials />
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ (oscuro) ─────────────────────────────────────── */}
       <section className="grain relative overflow-hidden bg-dusk py-20 text-cream lg:py-28">
         <HorizonArcs tone="dark" />
@@ -409,7 +475,7 @@ export default function Page() {
               <div className="mt-4 flex items-start gap-3 rounded-xl bg-blush/70 p-5">
                 <ShieldCheck className="mt-0.5 size-5 shrink-0 text-vine" />
                 <p className="text-sm leading-relaxed text-dusk/85">
-                  Proyecto desarrollado y respaldado por {site.legalBacker}
+                  Proyecto desarrollado por <strong>{site.developer}</strong>, con respaldo de {site.legalBacker}
                 </p>
               </div>
             </Reveal>
@@ -442,8 +508,15 @@ export default function Page() {
               )}
             </div>
           </div>
-          <div className="mt-10 flex flex-col gap-2 border-t border-cream/12 py-6 text-xs text-cream/45 sm:flex-row sm:items-center sm:justify-between">
-            <p>© {new Date().getFullYear()} {site.legalBacker} Todos los derechos reservados.</p>
+          <div className="mt-10 flex flex-col items-center gap-1 border-t border-cream/12 pt-8 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-cream/45">Desarrollado por</p>
+            <p className="font-display text-2xl text-gold">{site.developer}</p>
+          </div>
+          <div className="mt-6 flex flex-col gap-2 border-t border-cream/10 py-6 text-xs text-cream/45 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              © {new Date().getFullYear()} Mirador del Valle · Proyecto de {site.developer}. Con
+              respaldo de {site.legalBacker}
+            </p>
             <p>Precios y disponibilidad sujetos a confirmación.</p>
           </div>
         </div>

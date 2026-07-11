@@ -2,6 +2,7 @@
 
 export const site = {
   name: "Mirador del Valle",
+  developer: "Desarrollos California",
   legalBacker: "Urbanizadora y Desarrolladora California, S.A. de C.V.",
   tagline:
     "Terrenos amplios cerca de Valle de Guadalupe, diseñados para inversión patrimonial, descanso y desarrollo futuro.",
@@ -18,18 +19,16 @@ export function whatsappUrl(text?: string): string | null {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text ?? site.whatsappMsg)}`;
 }
 
-/** Datos confirmados del proyecto (fuente: brief comercial). */
+/** Datos del proyecto. */
 export const project = {
-  totalLots: 91,
-  soldLots: 21,
+  totalLots: 80,
+  soldLots: 20,
   soldMonths: 18,
-  availableLots: 70,
+  availableLots: 60,
   avgArea: 1000,
-  pricePerM2: 40,
-  pricePerM2Extended: 45,
+  pricePerM2: 45, // precio único
   downPaymentMin: 10,
   downPaymentMax: 20,
-  maxYearsBase: 5,
-  maxYearsExtended: 8,
+  maxYears: 8, // financiamiento sin intereses
   minutesToArena: 4,
 } as const;

@@ -14,14 +14,14 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Mirador del Valle | Terrenos cerca de Valle de Guadalupe desde US$40/m²",
+  title: "Mirador del Valle | Terrenos cerca de Valle de Guadalupe desde US$45/m²",
   description:
-    "Terrenos amplios de ≈1,000 m² a 4 minutos de Arena Valle de Guadalupe. Desde US$40/m², enganche del 10% al 20% y financiamiento flexible hasta 8 años.",
+    "Terrenos amplios de ≈1,000 m² a 4 minutos de Arena Valle de Guadalupe. Desde US$45/m², enganche del 10% al 20% y financiamiento hasta 8 años sin intereses.",
   alternates: { canonical: site.url },
   openGraph: {
     title: "Mirador del Valle | Terrenos cerca de Valle de Guadalupe",
     description:
-      "Terrenos amplios desde US$40/m² con enganche flexible y financiamiento disponible. 70 terrenos disponibles.",
+      "Terrenos amplios desde US$45/m² con enganche flexible y financiamiento sin intereses. ≈60 terrenos disponibles.",
     url: site.url,
     siteName: site.name,
     locale: "es_MX",

@@ -25,7 +25,7 @@ export function FloatingCTA() {
         }`}
       >
         <div className="flex items-center justify-between gap-3">
-          <p className="font-display text-sm text-cream">Desde US$40/m²</p>
+          <p className="font-display text-sm text-cream">Desde US$45/m²</p>
           <div className="flex shrink-0 items-center gap-2">
             {wa && (
               <a

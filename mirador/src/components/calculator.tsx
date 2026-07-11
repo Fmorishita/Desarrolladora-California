@@ -75,10 +75,10 @@ export function Calculator() {
   function applyYears(v: string) {
     setYearsInput(v);
     const n = Math.round(Number(v.replace(/[^0-9]/g, "")));
-    if (Number.isFinite(n) && n >= 0 && n <= project.maxYearsExtended) setYears(n);
+    if (Number.isFinite(n) && n >= 0 && n <= project.maxYears) setYears(n);
   }
 
-  const ppm2 = years > project.maxYearsBase ? project.pricePerM2Extended : project.pricePerM2;
+  const ppm2 = project.pricePerM2;
   const total = area * ppm2;
   const downAmt = Math.round(total * (down / 100));
   const balance = total - downAmt;
@@ -163,7 +163,8 @@ export function Calculator() {
               <span className="text-xs text-cocoa/70">años (0 = contado, máx. 8)</span>
             </div>
             <p className="mt-3 text-xs leading-relaxed text-cocoa/70">
-              Hasta 5 años el precio se mantiene en US$40/m². De 6 a 8 años, US$45/m².
+              Precio único de US$45/m². Financiamiento directo hasta 8 años,
+              <strong className="text-vine"> sin intereses</strong>.
             </p>
           </fieldset>
 
@@ -202,7 +203,7 @@ export function Calculator() {
             {usd.format(total)}
           </p>
           <p className="mt-1 text-sm text-cocoa">
-            {num.format(area)} m² × US${ppm2}/m²{years > project.maxYearsBase && " (plazo extendido)"}
+            {num.format(area)} m² × US${ppm2}/m²
           </p>
 
           <dl className="mt-6 flex-1 space-y-3">
@@ -235,8 +236,8 @@ export function Calculator() {
           </div>
 
           <p className="mt-4 text-[0.68rem] leading-relaxed text-cocoa/70">
-            Cotización estimada con financiamiento directo (mensualidades fijas). El monto final
-            depende del lote elegido; sujeta a disponibilidad y confirmación.
+            Cotización estimada con financiamiento directo, sin intereses (mensualidades fijas). El
+            monto final depende del lote elegido; sujeta a disponibilidad y confirmación.
           </p>
         </div>
       </div>

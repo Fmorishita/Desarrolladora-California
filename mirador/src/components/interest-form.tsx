@@ -16,8 +16,8 @@ const USE = [
 ];
 const TERM = [
   { value: "contado", label: "Contado" },
-  { value: "hasta_5_anios", label: "Hasta 5 años (US$40/m²)" },
-  { value: "hasta_8_anios", label: "Hasta 8 años (US$45/m²)" },
+  { value: "hasta_5_anios", label: "Hasta 5 años (sin intereses)" },
+  { value: "hasta_8_anios", label: "Hasta 8 años (sin intereses)" },
   { value: "por_definir", label: "Por definir" },
 ];
 
@@ -118,7 +118,7 @@ export function InterestForm() {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label="Presupuesto aproximado" htmlFor="approximate_budget" error={errors.approximate_budget?.message}>
-          <input id="approximate_budget" placeholder="Ej. US$40,000" className="field" {...register("approximate_budget")} />
+          <input id="approximate_budget" placeholder="Ej. US$45,000" className="field" {...register("approximate_budget")} />
         </Field>
         <Field label="Plazo deseado" htmlFor="desired_term" error={errors.desired_term?.message}>
           <select id="desired_term" defaultValue="" className="field" {...register("desired_term")}>
