@@ -38,3 +38,8 @@ Ver [`docs/ENVIRONMENT_VARIABLES.md`](./docs/ENVIRONMENT_VARIABLES.md) y [`.env.
 
 ## Deploy
 Ver [`docs/DEPLOYMENT_GUIDE.md`](./docs/DEPLOYMENT_GUIDE.md).
+
+## Videos (Remotion)
+`remotion/` es un proyecto independiente para crear/editar videos con código (intros,
+promocionales, reels de proyectos) usando [Remotion](https://www.remotion.dev). Ver
+[`remotion/README.md`](./remotion/README.md) para comandos y guía de uso.
